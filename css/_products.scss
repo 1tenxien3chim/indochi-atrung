@@ -1,0 +1,112 @@
+#back_link{
+    background: #2e3192;
+    padding: 25px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            padding: 0px 15px;
+            position: relative; 
+            &::after{
+                position: absolute;
+                content: "/";
+                color: #fff;
+                right: -3px;
+            }
+            &:first-child{
+                padding-left: 0px; 
+            }
+            &:last-child{
+                padding-right: 0px;
+                &::after{
+                    display: none;
+                }
+            }
+            a{
+                color:var(--bg-body);
+                .fa-home{
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+#list-product{
+    .box-product{
+        margin-bottom: 30px;
+        .img-product{ 
+            height: 225px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 225px;
+                object-fit: cover;
+                opacity: 0.8;
+                transition: transform .35s;
+            }
+            &:hover{
+                img{
+                     transform: scale(1.2);
+                     opacity: 1;
+                }
+            }
+        }
+        .desc-pro{
+            padding:35px 25px 25px 25px;
+            background: var(--bg-body);
+            position: relative;
+            .title-product{
+                position: absolute;
+                top: -15px;
+                a{
+                    font-weight: 400;
+                    font-size: 18px;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background: var(--color-primary);
+                    color:var(--bg-body);
+                }
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23px;
+            }
+        } 
+
+    }
+}
+#list-product.news-pages{
+    .box-product{
+        .desc-pro{
+            .title-product{
+                a{
+                    background:#3cbff3;
+                } 
+            }
+        } 
+    } 
+}
+#news-detail{
+    .content-news{
+        background: var(--bg-body);
+        padding: 15px; 
+        .title-detail{
+            font-size: 30px;
+            line-height:auto;
+            margin-bottom: 15px;
+        }
+        img{
+            max-width: 100%;
+            margin: 15px 0px;
+        }
+        p{
+            font-size: 16px;
+            color: var(--text-color);
+            line-height: 24px;
+        }
+    }
+}

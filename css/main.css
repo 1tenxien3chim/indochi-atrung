@@ -21605,4 +21605,106 @@ body {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+#back_link {
+  background: #2e3192;
+  padding: 25px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#back_link ul {
+  list-style: none;
+  display: flex;
+}
+#back_link ul li {
+  padding: 0px 15px;
+  position: relative;
+}
+#back_link ul li::after {
+  position: absolute;
+  content: "/";
+  color: #fff;
+  right: -3px;
+}
+#back_link ul li:first-child {
+  padding-left: 0px;
+}
+#back_link ul li:last-child {
+  padding-right: 0px;
+}
+#back_link ul li:last-child::after {
+  display: none;
+}
+#back_link ul li a {
+  color: var(--bg-body);
+}
+#back_link ul li a .fa-home {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#list-product .box-product {
+  margin-bottom: 30px;
+}
+#list-product .box-product .img-product {
+  height: 225px;
+  overflow: hidden;
+}
+#list-product .box-product .img-product img {
+  width: 100%;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  transition: transform 0.35s;
+}
+#list-product .box-product .img-product:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+#list-product .box-product .desc-pro {
+  padding: 35px 25px 25px 25px;
+  background: var(--bg-body);
+  position: relative;
+}
+#list-product .box-product .desc-pro .title-product {
+  position: absolute;
+  top: -15px;
+}
+#list-product .box-product .desc-pro .title-product a {
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px 10px;
+  background: var(--color-primary);
+  color: var(--bg-body);
+}
+#list-product .box-product .desc-pro p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+#list-product.news-pages .box-product .desc-pro .title-product a {
+  background: #3cbff3;
+}
+
+#news-detail .content-news {
+  background: var(--bg-body);
+  padding: 15px;
+}
+#news-detail .content-news .title-detail {
+  font-size: 30px;
+  line-height: auto;
+  margin-bottom: 15px;
+}
+#news-detail .content-news img {
+  max-width: 100%;
+  margin: 15px 0px;
+}
+#news-detail .content-news p {
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 24px;
 }/*# sourceMappingURL=main.css.map */
