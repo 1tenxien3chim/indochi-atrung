@@ -159,23 +159,92 @@
         background-color: var(--bg-body);
         .box-related{
             padding: 10px;
-            margin-bottom: 50px;
-            border-radius: 15px;
-            border:1px solid #eee;
+            margin-bottom:20px;
+            border-radius: 15px; 
+            .img-related{ 
+                img{
+                    min-height: 180px;
+
+                }
+            }
             h2{
-                font-size: 14px;
-                color: var(--color-text);
-                text-align: center;
+                font-size: 16px; 
+                text-align: left;
                 line-height: 1;
                 padding: 15px 0px 10px;
                 margin-top: 15px;
-                border-top: 1px solid #eee;
-                &:hover{
-                    a{
-                        color: var(--color-text);
+                border-top: 1px solid #eee; 
+                a{
+                    color: var(--color-heading); 
+                    &:hover{
+                        color: var(--color-primary);
                     }
-                }
+                } 
             }
         }
+    }
+}
+//  contact us 
+
+.box-maps{
+    margin-bottom:50px;
+}
+.bg-contact{
+    background-color: var(--bg-body);
+    padding:30px;
+    .contact-box{ 
+        margin-bottom: 30px;
+        .title-contact{
+            position: relative;
+            font-size: 20px;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+            padding-bottom: 10px; 
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            &::after{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                content: ""; 
+                width: 70px;
+                height: 3px;
+                background: var(--color-primary);
+            }
+        }
+        p{
+            font-size: 16px;
+            color: var(--color-text-body);
+            font-weight: 400;
+            i.fa{
+                font-size: 14px;
+                margin-right: 10px;
+                color: var(--color-primary);
+            }
+        }
+    } 
+    .form-contact{
+        .form-group{
+            margin-bottom: 20px;
+            input{
+                border-radius: 0px; 
+                height: 42px;
+            }
+            textarea{
+                border-radius: 0px; 
+            } 
+        }
+        button{
+            padding: 7px 18px;
+            border-radius: 0px;
+            border: 0px;
+            background: var(--color-primary);
+            text-align: center;
+            color: var(--bg-body);
+        }
+    }
+    @media (max-width:991px) {
+         padding:15px;
     }
 }

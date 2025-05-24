@@ -20403,7 +20403,7 @@ readers do not read off random characters that represent icons */
 
 :root {
   --color-primary:#282a7f;
-  --color-heading:#333333;
+  --color-heading:#272727;
   --color-text-menu:#000;
   --color-text:#666;
   --color-text-body:#000;
@@ -22382,19 +22382,87 @@ body {
 }
 #product-detail .products-related .box-related {
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   border-radius: 15px;
-  border: 1px solid #eee;
+}
+#product-detail .products-related .box-related .img-related img {
+  min-height: 180px;
 }
 #product-detail .products-related .box-related h2 {
-  font-size: 14px;
-  color: var(--color-text);
-  text-align: center;
+  font-size: 16px;
+  text-align: left;
   line-height: 1;
   padding: 15px 0px 10px;
   margin-top: 15px;
   border-top: 1px solid #eee;
 }
-#product-detail .products-related .box-related h2:hover a {
-  color: var(--color-text);
+#product-detail .products-related .box-related h2 a {
+  color: var(--color-heading);
+}
+#product-detail .products-related .box-related h2 a:hover {
+  color: var(--color-primary);
+}
+
+.box-maps {
+  margin-bottom: 50px;
+}
+
+.bg-contact {
+  background-color: var(--bg-body);
+  padding: 30px;
+}
+.bg-contact .contact-box {
+  margin-bottom: 30px;
+}
+.bg-contact .contact-box .title-contact {
+  position: relative;
+  font-size: 20px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+}
+.bg-contact .contact-box .title-contact::after {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: var(--color-primary);
+}
+.bg-contact .contact-box p {
+  font-size: 16px;
+  color: var(--color-text-body);
+  font-weight: 400;
+}
+.bg-contact .contact-box p i.fa {
+  font-size: 14px;
+  margin-right: 10px;
+  color: var(--color-primary);
+}
+.bg-contact .form-contact .form-group {
+  margin-bottom: 20px;
+}
+.bg-contact .form-contact .form-group input {
+  border-radius: 0px;
+  height: 42px;
+}
+.bg-contact .form-contact .form-group textarea {
+  border-radius: 0px;
+}
+.bg-contact .form-contact button {
+  padding: 7px 18px;
+  border-radius: 0px;
+  border: 0px;
+  background: var(--color-primary);
+  text-align: center;
+  color: var(--bg-body);
+}
+@media (max-width: 991px) {
+  .bg-contact {
+    padding: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
