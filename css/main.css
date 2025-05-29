@@ -20464,7 +20464,7 @@ a, span, p, button {
 body {
   font-family: var(--font-body);
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
@@ -21891,8 +21891,15 @@ body {
   justify-content: center;
 }
 #product-event .slider-product .item .images-product img {
-  max-height: 300px;
+  height: 500px;
   width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  #product-event .slider-product .item .images-product img {
+    height: 350px;
+  }
 }
 #product-event .slider-product .item .desc-product {
   padding: 35px 25px 25px 25px;
@@ -21967,7 +21974,7 @@ body {
   color: #333333;
   font-size: 0.95rem;
   margin: 10px 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .event .event-card .event-location i,
 .event .event-card .publish-date i {
