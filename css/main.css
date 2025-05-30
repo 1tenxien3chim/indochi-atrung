@@ -21898,7 +21898,8 @@ body {
 }
 @media (max-width: 767px) {
   #product-event .slider-product .item .images-product img {
-    height: 350px;
+    height: auto;
+    width: 100%;
   }
 }
 #product-event .slider-product .item .desc-product {

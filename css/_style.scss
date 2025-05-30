@@ -101,7 +101,8 @@ body{
                     width: auto;
                     object-fit: cover;
                     @media (max-width:767px) {
-                        height: 350px;
+                        height: auto;
+                        width: 100%;
                     }
                 }
             } 
